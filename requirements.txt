@@ -1,2 +1,7 @@
 regex
 tiktoken
+ipykernel
+pyarrow
+pandas
+numpy
+torch

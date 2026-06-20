@@ -1,6 +1,5 @@
 import tiktoken
 
-
 class BPETokenizer:
     """Reusable BPE tokenizer wrapper using tiktoken."""
 
@@ -23,9 +22,10 @@ class BPETokenizer:
 
 
 if __name__ == "__main__":
-    tokenizer = BPETokenizer("gpt2", allowed_special={"<|endoftext|>"})
-    text = """It's the last he painted, you know," 
-            Mrs. Gisburn said with pardonable pride.<|endoftext|>"""
+    tokenizer = BPETokenizer()
+    data_path = r"D:\AI-Projects\LLM-From-Scratch\HarryPotterDataset\all_harry_potter.txt"
+    with open(data_path, "r", encoding="utf-8") as f:
+        text = f.read()
     ids = tokenizer.encode(text)
     print("Encoded IDs:", ids)
     print("Decoded:", tokenizer.decode(ids))
