@@ -434,3 +434,6 @@ FodyWeavers.xsd
 
 /learning-code-files
 /HarryPotterDataset
+.venv/
+data/*.txt
+data/*.parquet
