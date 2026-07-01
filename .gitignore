@@ -431,5 +431,13 @@ FodyWeavers.xsd
 
 
 .venv/
+.vscode
 data/*.txt
 data/*.parquet
+Notebooks/
+
+# LLM training & notebook artifacts
+*.pth
+gpt2/
+*.pdf
+.ipynb_checkpoints/
