@@ -434,7 +434,7 @@ FodyWeavers.xsd
 .vscode/
 data/
 *.csv
-Notebooks/
+Learning_Notebooks/
 
 # LLM training & notebook artifacts
 *.pth
